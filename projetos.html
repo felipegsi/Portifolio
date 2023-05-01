@@ -10,6 +10,8 @@
   <meta name="description" content="Meu Portifólio">
   <meta name="keywords" content="palavras chave">
   <link rel="stylesheet" href="projetos.css">
+  <script src="projetos.js"></script>
+
 
 </head>
 
@@ -23,8 +25,8 @@
         <a href="index.html">Início</a>
         <a href="sobreMim.html">Sobre</a>
         <a href="projetos.html">Projetos</a>
-        <a href="Curriculo.pdf">Contacto</a>
-        <a href="#">Currículo</a>
+        <a href="#">Contacto</a>
+        <a href="Curriculo.pdf" download="Curriculo">Currículo</a>
         <div class="animation start-home"></div>
       </div>
 
@@ -38,6 +40,7 @@
 
   <main>
 
+
     <section class="hero">
       <div class="content">
 
@@ -45,12 +48,19 @@
           <h2>Meus Projetos</h2>
           <p>Este é o meu Portifólio feito na cadeira de Programação Web.</p>
 
+
+
           <div>
             <img src="car arduino.png" alt="Arduino Car">
             <div>
               <p>Arduino Car</p>
             </div>
+
           </div>
+          <button onclick="window.location.href='index.html'">Saiba mais</button>
+
+
+
 
           <div>
             <img src="DeisiJungle.png" alt="Deisi Jungle">
@@ -58,6 +68,10 @@
               <p>Deisi Jungle</p>
             </div>
           </div>
+          <button onclick="window.location.href='index.html'">Saiba mais</button>
+
+
+
 
           <div>
             <img src="DeisiFlix.png" alt="Deisi Flix">
@@ -65,6 +79,10 @@
               <p>DeisiFlix Movies</p>
             </div>
           </div>
+          <button onclick="window.location.href='index.html'">Saiba mais</button>
+
+
+
 
           <div>
             <img src="ProjBaseDeDados.png" alt="Projeto Base De Dados">
@@ -72,6 +90,11 @@
               <p>Projeto de Base De Dados</p>
             </div>
           </div>
+          <button onclick="window.location.href='index.html'">Saiba mais</button>
+
+
+
+
 
           <div>
             <img src="MaquinaLavar.png" alt="Programa Maquina de Lavar(funcional)">
@@ -79,6 +102,11 @@
               <p>Programa Máquina de Lavar(funcional)</p>
             </div>
           </div>
+          <button onclick="window.location.href='index.html'">Saiba mais</button>
+
+
+
+
 
           <div>
             <img src="MineProj.png" alt="Projeto Minesweeper">
@@ -86,6 +114,11 @@
               <p>Projeto Minesweeper</p>
             </div>
           </div>
+          <button onclick="window.location.href='index.html'">Saiba mais</button>
+
+
+
+
 
           <div>
             <img src="NaoTeConstipes.png" alt="Não te Constipes">
@@ -93,10 +126,15 @@
               <p>Jogo Não te Constipes</p>
             </div>
           </div>
-        
+          <button onclick="window.location.href='index.html'">Saiba mais</button>
+
+
+
+          
+
           <div class="container">
             <div class="circle">
-              <p>Imagens aleatórias!</p>
+              <p>Random images</p>
             </div>
             <div class="image">
               <img src="https://picsum.photos/400/300" alt="Imagem">
@@ -106,17 +144,38 @@
             </div>
           </div>
 
-        </div>
-
-
-        <p>TESTES</p>
-      </div>
-
-
-
     </section>
 
-
+<!-- codigo da calculadora-->
+<div class="main">
+  <input type="text" id = 'res'>
+  <div class="btn">
+     <input type="button" value = 'C' onclick = "Clear()">
+     <input type="button" value = '%' onclick = "Solve('%')">
+     <input type="button" value = '←' onclick ="Back('←')">
+     <input type="button" value = '/' onclick = "Solve('/')">
+     <br>
+     <input type="button" value = '7' onclick = "Solve('7')">
+     <input type="button" value = '8' onclick = "Solve('8')">
+     <input type="button" value = '9' onclick = "Solve('9')">
+     <input type="button" value = 'x' onclick = "Solve('*')">
+     <br>
+     <input type="button" value = '4' onclick = "Solve('4')">
+     <input type="button" value = '5' onclick = "Solve('5')">
+     <input type="button" value = '6' onclick = "Solve('6')">
+     <input type="button" value = '-' onclick = "Solve('-')">
+     <br>
+     <input type="button" value = '1' onclick = "Solve('1')">
+     <input type="button" value = '2' onclick = "Solve('2')">
+     <input type="button" value = '3' onclick = "Solve('3')">
+     <input type="button" value = '+' onclick = "Solve('+')">
+     <br>
+     <input type="button" value = '00'onclick = "Solve('00')">
+     <input type="button" value = '0' onclick = "Solve('0')">
+     <input type="button" value = '.' onclick = "Solve('.')">
+     <input type="button" value = '=' onclick = "Result()">
+  </div>
+</div>
 
 
 
