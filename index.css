@@ -263,3 +263,36 @@ body {
 
 
 
+
+
+
+
+
+
+
+body {
+  background-color: #fff;
+  color: #333;
+  transition: all 0.3s;
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #cdb645;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
